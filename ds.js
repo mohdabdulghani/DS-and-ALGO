@@ -27,5 +27,16 @@
 // let strin = String.raw`what is your \n name my name is `
 // console.log(strin)
 
+
+function countWords(str) {
+    str = str.replace(/(^\s*)|(\s*$)/gi,"");
+    str = str.replace(/[ ]{2,}/gi," ");
+    str = str.replace(/\n /,"\n");
+    str = str.replace((/[^a-zA-Z]+/i),"")
+    
+    return str.split(' ').length;
+ }
+ let meh = "what if i am not going to find you a new class"
+ console.log(countWords(meh))
      
 
