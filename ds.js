@@ -16,6 +16,24 @@
 //     }
 //     return count;
 // }
+
+
+
+let str="ttttwww wo the what is the"
+split = str.split(" ");
+obj ={};
+for(let i = 0; i < split.length; i++){
+    if(obj[split[i]] === undefined) {
+        obj[split[i]] = 1;
+    }else {
+        obj[split[i]]++;
+    }
+}
+console.log(obj)
+
+
+
+
 //     let string="ttttwww wo the"
 //     let word="t"
 //     // let leter = "w"
@@ -28,15 +46,15 @@
 // console.log(strin)
 
 
-function countWords(str) {
-    str = str.replace(/(^\s*)|(\s*$)/gi,"");
-    str = str.replace(/[ ]{2,}/gi," ");
-    str = str.replace(/\n /,"\n");
-    str = str.replace((/[^a-zA-Z]+/i),"")
+// function countWords(str) {
+//     str = str.replace(/(^\s*)|(\s*$)/gi,"");
+//     str = str.replace(/[ ]{2,}/gi," ");
+//     str = str.replace(/\n /,"\n");
+//     str = str.replace((/[^a-zA-Z]+/i),"")
     
-    return str.split(' ').length;
- }
- let meh = "what if i am not going to find you a new class"
- console.log(countWords(meh))
+//     return str.split(' ').length;
+//  }
+//  let meh = "what if i am not going to find you a new class"
+//  console.log(countWords(meh))
      
 
