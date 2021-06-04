@@ -57,4 +57,4 @@ console.log(obj)
 //  let meh = "what if i am not going to find you a new class"
 //  console.log(countWords(meh))
      
-
+// find the unique number
